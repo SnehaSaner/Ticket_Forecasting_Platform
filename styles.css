@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* Change the header background with a gradient */
+header[data-testid="stHeader"] {
+    background: linear-gradient(to right, #00235b, #98dfd6);
+    color: white; /* Changes text color to white */
+}
+
+/* Adjust header title text (if needed) */
+header[data-testid="stHeader"] .stText {
+    color: white; /* Adjust text color to match the theme */
+}
+
+/* Change the background color */
+.stApp {
+    background-color: #f6f9fc;
+}
+
+/* Apply the Bubblegum Sans font to the title */
+.main .block-container h1 {
+    color: #ffffff;  /* Changed to bright white */
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 40px;
+}
+
+/* Style the subtitles */
+.main .block-container h2 {
+    color: #ffffff; /* Changed to bright white */
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+/* Style general text */
+.main .block-container p {
+    color: #F8F8F8; /* Bright off-white color for better contrast */
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Bubblegum Sans', cursive; /* Changed font to Bubblegum Sans */
+}
+
+/* Style the sidebar */
+.sidebar .sidebar-content {
+    background-color: #98dfd6; /* Light teal background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sidebar customization */
+.sidebar .sidebar-content {
+    color: #ffffff; /* White text color for sidebar */
+    font-family: 'Bangers', cursive; /* Changed to 'Bangers' font */
+    font-size: 26px; /* Increased the font size */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Sidebar title */
+h1 {
+    color: #4CAF50; /* Maintain this color for sidebar title */
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Radio button styles in sidebar */
+.stRadio > div {
+    font-size: 22px; /* Increased the font size */
+    font-weight: bold; /* Make the radio button labels bold */
+}
+
+/* Custom chart colors */
+.plotly-chart .modebar {
+    background-color: #98dfd6;
+}
+
+/* General layout */
+body {
+    background-color: #ff6868; /* Consider changing this if needed */
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Sidebar styling */
+.stSidebar {
+    background-color: #1c5192; /* Dark purple background */
+    color: #ffffff; /* White text for visibility */
+    font-size: 30px;
+}
+
+/* Section titles */
+h1, h2, h3 {
+    color: #ffffff; /* Changed to bright white */
+    text-align: center;
+}
+
+/* Line chart styling */
+.plotly-graph-div {
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(152, 223, 214, 0.5); /* Fixed box shadow color */
+}
+
+/* Change the font color of information text */
+.main .block-container p {
+    color: #F8F8F8; /* Use a bright off-white color */
+    font-family: 'Bubblegum Sans', cursive; /* Changed to Bubblegum Sans */
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white; /* Button text remains white */
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Sidebar button styling */
+section[data-testid="stSidebar"] .stButton button {
+    background: linear-gradient(to right, #6a0dad, #00bfae); /* Gradient for buttons */
+    color: #fff; /* Text color */
+    font-size: 18px; /* Adjust font size */
+    padding: 12px 20px; /* Add padding for consistent size */
+    width: 100%; /* Make all buttons the same width */
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0; /* Add spacing between buttons */
+    cursor: pointer;
+    font-family: 'Bubblegum Sans', cursive;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds a shadow for a cool effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for buttons */
+section[data-testid="stSidebar"] .stButton button:hover {
+    background: linear-gradient(to right, #FFD700, #FF6347); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Icon container for random positioning */
+.icon-container {
+    position: absolute;
+    top: 20%; /* Adjust position */
+    left: 10%; /* Adjust position */
+    font-size: 30px; /* Adjust size */
+    color: #FFD700; /* Gold color */
+    animation: rotate 4s linear infinite; /* Animation for rotation */
+}
+
+.icon-container:nth-child(2) {
+    top: 50%;
+    left: 30%;
+    animation: pulse 2s infinite; /* Different animation */
+}
+
+.icon-container:nth-child(3) {
+    top: 70%;
+    left: 60%;
+    font-size: 40px; /* Different size */
+    animation: bounce 3s infinite; /* Different animation */
+}
+
+/* Animation keyframes */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
